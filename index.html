@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <!--CABEÇALHO-->
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img  class="header__logo" src="dist/images/logo/LogoFilmes.png" alt="logo Lavo Tá Novo Filmes">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <!--SEÇÃO HERO-->
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="dist/images/logo/LogoFilmes.png" alt="logo Lavo Tá Novo Filmes">
-            </h1>
+            </div>
             <h3 class="title--small">
                 Os melhores filmes em um só lugar.
             </h3>
@@ -120,8 +137,140 @@
         </p>
     </section>
 
-    <!--SEÇÃO-->
-    
+    <!--SEÇÃO ASSISTA ONDE QUISER-->
+    <section class="image-text-section">
+        <img src="dist/images/Assista em qualquer lugar.png" alt="Computador, tablet, TV e celular">
+        <div class="watch-anywhere__text__container">
+            <h2 class="title">Assista em qualquer lugar</h2>
+            <p class="text--big">
+                Aproveite a tela grande da TV ou assista no tablet, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+            </p>
+        </div>
+    </section>
+
+    <!--SEÇÃO RESUMO DO FILME-->
+    <section class="image-text-section">
+        <img src="dist/images/resumoDoFilme.png" alt="Don estrelando no show">
+        <div class="watch-anywhere__text__container">
+            <h2 class="title">Resumo do Filme</h2>
+            <p class="text--big">
+                Don e seu amigo de longa data, Cosmo Brown, decidem secretamente dublar a voz de Lina com a de Kathy no primeiro filme falado deles. No entanto, as coisas se complicam quando Lina descobre o plano e tenta sabotá-lo. O filme é famoso por suas cenas de dança e números musicais, incluindo a icônica cena de Gene Kelly dançando na chuva. "Cantando na Chuva" é considerado um dos maiores musicais de todos os tempos.
+            </p>
+        </div>
+    </section>
+
+    <!--SEÇÃO DISPOSITIVOS-->
+    <section class="available-devices">
+        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <!--TV-->
+            <li class="available-devices__list__item">
+                <img src="dist/images/dispositivos/tv.png" alt="Televisão">
+                <h4 class="title--small">Televisão</h4>
+                <ul class="text">
+                    <li>Samsung</li>
+                    <li>TVs LG</li>
+                </ul>
+            </li>
+            <!--celular e tablet-->
+            <li class="available-devices__list__item">
+                <img src="dist/images/dispositivos/celular.png" alt="Celular e Tablet">
+                <h4 class="title--small">Celular e Tablet</h4>
+                <ul class="text">
+                    <li>Celulares e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+            <!--computador-->
+            <li class="available-devices__list__item">
+                <img src="dist/images/dispositivos/computador.png" alt="Televisão">
+                <h4 class="title--small">Televisão</h4>
+                <ul class="text">
+                    <li>PC Windows</li>
+                    <li>MacOS</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!--SEÇÃO FAQ-->
+    <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <!--Pergunta e Reposta 01-->
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual o nome original do filme?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    • O nome original do filme “Cantando na Chuva” é "Singin’ in the Rain". 
+                </div>
+            </li>
+            <!--Pergunta e Reposta 02-->
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual o ano do filme?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    • O filme é um clássico musical americano de 1952.
+                </div>
+            </li>
+            <!--Pergunta e Reposta 03-->
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual o nome do diretor?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    • O filme foi dirigido e coreografado por Gene Kelly e Stanley Donen.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="rodape__container">
+            <img class="rodape__logo" src="./dist/images/logo/LogoFilmes.png" alt="Logo Lavo tá Novo">
+            <ul class="rodape__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="src/images/icones/globe.svg" alt="Globo do Mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Proteção de Dados</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="rodape__links__item">
+                    <a href="#" class="text--small">Sobre</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2024 Lavo Tá Novo Filmes. Todos os direitos reservados.
+            </p>
+            <p class="text--small">
+                Lavo Tá Novo Filmes é uma págia fictícia, desenvolvida por Sérgio Adriano (Linkedin). O serviço Lavo Tá novo Filmes não é comercializado. Endereço inventado One, Av. das Paineiras, 12.551, 12.555, 12.559, Piso 10, Brasília/DF – CEP 71.d85-ab3, Brasil e CNPJ/M 7x.042.b62/000x-x0
+            </p>
+        </div>
+    </footer>
 
     <!--JavaScript-->
     <script src="src/main.js"></script>

@@ -2,6 +2,24 @@
 document.addEventListener('DOMContentLoaded', function(){
     //SELECIONA TODOS OS ELEMENTOS DESTE ATRIBUTO 
     const buttons = document.querySelectorAll('[data-tab-button]');
+    //SELECIONA TODOS OS ATRIBUTOS DA FAQ
+    const questions = document.querySelectorAll('[data-faq-question]');
+
+    //CABEÇALHO Pós HERO
+    const heroSection = document.querySelector('.hero');
+    //PEGAR A ALTURA NA PÁGINA
+    const alturaHero = heroSection.clientHeight;
+
+    //PEGAR A POSIÇÃO ATUAL NA PÁGINA
+    window.addEventListener('scroll', function(){
+        const posicaoAtual = window.scrollY;
+
+        if(posicaoAtual < alturaHero){
+            ocultarElementosDoHeader();
+        }else{
+            exibeElementosDoHeader();
+        }
+    });
     
     for (let i = 0; i < buttons.length; i++){
         //ADICIONA UMA FUNÇÃO AO CLICK DO BOTÃO
@@ -23,7 +41,30 @@ document.addEventListener('DOMContentLoaded', function(){
             botao.target.classList.add('shows__tabs__button--is-active');
         });
     }
+
+    //PERGUNTAS E RESPOSTAS FAQ
+    for (let i = 0; i < questions.length; i++){
+        questions[i].addEventListener('click', abreOuFechaResposta);
+    }
 });
+
+function ocultarElementosDoHeader(){
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementosDoHeader(){
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
+
+//FUNÇÃO PARA ABRIR OU FECHAR A FAQ
+function abreOuFechaResposta(elemento){
+    const classe = 'faq__questions__item--is-open';
+    const elementoPai = elemento.target.parentNode;
+
+    elementoPai.classList.toggle(classe);
+}
 
 //FUNÇÃO PARA REMOVER A CLASSE 'shows__tabs__button--is-active' INDICANDO QUE NÃO ESTÃO MAIS ATIVOS
 function removeBotaoAtivo(){

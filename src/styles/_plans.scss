@@ -8,6 +8,19 @@
         display: flex;
         justify-content: space-around;
         margin-top: 70px;
+
+        @media(max-width: 768px){
+            display: block;
+
+            strong{
+                
+                padding-bottom: 12px;
+            }
+
+            p{
+                padding-bottom: 12px;
+            }
+        }
         
         &__item{
             text-align: center;
