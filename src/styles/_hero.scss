@@ -13,6 +13,10 @@
         text-decoration: none;
     }
 
+    .button{
+        width: 50%;
+    }
+
     @media(max-width: 768px){
         background-image: url(../images/hero_desktop_celular.png);
         display: block;
