@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
+    <!--SEÇÃO HERO-->
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -22,7 +22,7 @@
                 <span class="text">R$25,10/mês ou R$248,70 à vista*</span>
             </p>
             <ul class="hero__content__combos__combo">
-                <button>Assine Agora</button>
+                <button class="button">Assine agora</button>
                 <span class="text">Valor Promocional*</span>
             </ul>
             <p class="text--small">
@@ -31,5 +31,99 @@
 
         </div>
     </section>
+    <!--SEÇÃO ATRAÇÕES - GRID 2 LINHAS/ 3 COLUNAS-->
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="filme" class="shows__tabs__button shows__tabs__button--is-active">
+                Filme
+            </button>
+            <button data-tab-button="atores" class="shows__tabs__button">
+                Atores
+            </button>
+            <button data-tab-button="poster" class="shows__tabs__button">
+                Poster
+            </button>
+        </nav>
+        <!--Filme-->
+        <ul data-tab-id="filme" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/imgs filme/Atores01.png" alt="Kathy Selden e Don Lockwood">
+                <p class="text" style="text-align: center;">Kathy Selden e Don Lockwood</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/imgs filme/Atores02.png" alt="Don Lockwood e Kathy Selden">
+                <p class="text" style="text-align: center;">Don Lockwood e Kathy Selden</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/imgs filme/Atores03.png" alt="Cosmo Brown e Don Lockwood">
+                <p class="text" style="text-align: center;">Cosmo Brown e Don Lockwood</p>
+            </li>
+            
+        </ul>
+        <!--Atores-->
+        <ul data-tab-id="atores" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/Gene_Kelly.png" alt="Gene Kelly">
+                <p class="text" style="text-align: center;">Gene Kelly</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/Debbie_Reynolds.png" alt="Debbie Reynolds">
+                <p class="text" style="text-align: center;">Debbi Reynolds</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/elenco/Donald_OConnor.png" alt="Donald O'Connor">
+                <p class="text" style="text-align: center;">Donald O'Connor</p>
+            </li>
+            
+        </ul>
+        <!--Poster-->
+        <ul data-tab-id="poster" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/posters/poster03.png" alt="Poster VHS">
+                <p class="text" style="text-align: center;">Poster VHS</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/posters/poster04.png" alt="Poster DVD">
+                <p class="text" style="text-align: center;">Poster DVD</p>
+            </li>
+            
+        </ul>
+    </section>
+
+    <!--SEÇÃO PLANOS-->
+    <section class="plans">
+        <h2 class="title--big">
+            Escolha seu plano
+        </h2>
+        <ul class="plans__list">
+            <!--PLANO MENSAL-->
+            <li class="plans__list__item">
+                <img src="dist/images/logo/LogoFilmes.png" alt="Lavo tá Novo logo">
+                <strong class="title--small">R$25,10/mês</strong>
+                <p class="text--big">
+                    Lavo Tá Novo Filmes, seu lugar das estréias, originais e clássicos do cinema.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <!--PLANO ANUAL-->
+            <li class="plans__list__item">
+                <img src="dist/images/logo/LogoFilmes.png" alt="Lavo tá Novo logo">
+                <strong class="title--small">R$248,70/ano</strong>
+                <p class="text--big">
+                    Lavo Tá Novo Filmes, economize e aproveite agora seu novo serviço de streaming.
+                </p>
+                <button class="button" >Assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O preço pode variar caso a assinatura seja feita em outras plataformas.
+        </p>
+    </section>
+
+    <!--SEÇÃO-->
+    
+
+    <!--JavaScript-->
+    <script src="src/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 @use 'variaveis' ;
 @use 'hero' ;
+@use 'shows' ;
+@use 'plans' ;
 
 @font-face{
     font-family: Avenir;
@@ -17,13 +19,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+    font-family: Avenir, sans-serif;
 }
 
 
 
 body{
     background-color: variaveis.$corDeFundo;
-    font-family: Avenir, sans-serif;
+    
 }
 
 //@mixin PERMITE A REUTILIZAÇÃO DE CÓDIGOs CSS
@@ -67,4 +70,21 @@ body{
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button{
+    display: block;
+    width: 50%;
+    height: 60px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 2vw;
+    background-color: #E80C0C;
+    color: variaveis.$corTextoSecundario;
+    text-transform: uppercase;
+    border-radius: 8px;
+    
+    
 }
